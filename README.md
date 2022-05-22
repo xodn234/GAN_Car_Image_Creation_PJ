@@ -32,7 +32,29 @@
 
 ### 결과물
 - 차 이미지가 잘 나오지 않아 비교를 위해 애니메이션 데이터를 같은 모델에 적용
+- 자동차 데이터
 - ![dcgan-2 (epoch1000) - 용량down](https://user-images.githubusercontent.com/78893090/169686246-98676570-0e5c-4b1b-aad1-7b6d613d0d62.gif)
+- ![image](https://user-images.githubusercontent.com/78893090/169686321-09afc96c-a948-41ea-95f4-c9bec890f137.png)
+- 애니메이션 데이터
 - ![ani-4 (epoch1000) - 용량down](https://user-images.githubusercontent.com/78893090/169686251-b2a9a9cb-706d-4f8b-9ce4-9fd2bbd97585.gif)
+- ![image](https://user-images.githubusercontent.com/78893090/169686348-f7cf19ac-6051-4fb8-a6e4-c2f57f5b13cf.png)
 
+### 입력 이미지 데이터 비교
+- ![image](https://user-images.githubusercontent.com/78893090/169686403-6588d5e7-cc47-4f6d-befd-3860188b7206.png)
+- 다른 결과가 나오는 이유는?
+  - 차량의 너무 다른 각도와 배경도 너무 달라 복합적인 이미지가 되어 알아보기 힘든 이미지로 생성이 됨
+
+### 진행 한계점
+- 데이터 수 부족
+  - 논문 참조시 약 300만 image사용 (현재 6000 image 사용)
+- 컴퓨터 성능 문제
+  -  image size : (256 x 256) -> (128 x 128)
+  -  간단한 Test 진행도 시간이 오래걸리는 문제로 다양한모델 구성 및 하이퍼 파라미터 조절이 어려움
+
+### 개선방향
+- 한층 더 개선된 styleGAN2와 같은 모델 사용
+- Segmentation으로 car를 인식하여 배경을 제외 후 학습
+- 중고차 사이트이미지 사용 (일반적으로 하나의 각도의 사진 사용) 
+- 차 종류 분류 후 진행 (세단 SUV 트럭 기타 등등)
+- 연도별 자동차이미지로 시계열 모델을 적용하여 차세대 이미지 예측 생성
 
