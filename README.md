@@ -31,5 +31,8 @@
   - discriminator(판별자) -> discriminator_loss(loss -> BinaryCrossentropy) -> discriminator_optimizer(Adam)
 
 ### 결과물
-- 용량적인 문제로 에포크 과정 생략
+- 차 이미지가 잘 나오지 않아 비교를 위해 애니메이션 데이터를 같은 모델에 적용
+- ![dcgan-2 (epoch1000) - 용량down](https://user-images.githubusercontent.com/78893090/169686246-98676570-0e5c-4b1b-aad1-7b6d613d0d62.gif)
+- ![ani-4 (epoch1000) - 용량down](https://user-images.githubusercontent.com/78893090/169686251-b2a9a9cb-706d-4f8b-9ce4-9fd2bbd97585.gif)
+
 
