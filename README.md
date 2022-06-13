@@ -60,4 +60,4 @@
 - 연도별 자동차이미지로 시계열 모델을 적용하여 차세대 이미지 예측 생성
 
 ### 주요 스킬
-- TensorFlow(keras), opencv
+- TensorFlow(keras), OpenCV
